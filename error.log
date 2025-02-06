@@ -1,0 +1,13 @@
+[23-Oct-2024 03:35:35 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 63
+[23-Oct-2024 03:40:06 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 67
+[23-Oct-2024 03:41:34 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 67
+[23-Oct-2024 03:43:44 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 67
+[23-Oct-2024 03:44:13 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 67
+[23-Oct-2024 03:45:30 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 67
+[23-Oct-2024 03:46:43 Europe/Berlin] PHP Notice:  Only variables should be passed by reference in C:\xampp\htdocs\dashboard\register_user.php on line 66
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Warning:  Constant DB_SERVER already defined in C:\xampp\htdocs\dashboard\config.php on line 10
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Warning:  Constant DB_USERNAME already defined in C:\xampp\htdocs\dashboard\config.php on line 11
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Warning:  Constant DB_PASSWORD already defined in C:\xampp\htdocs\dashboard\config.php on line 12
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Warning:  Constant DB_NAME already defined in C:\xampp\htdocs\dashboard\config.php on line 13
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Warning:  Constant DB_PORT already defined in C:\xampp\htdocs\dashboard\config.php on line 14
+[25-Nov-2024 07:27:13 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\dashboard\nav.php on line 3

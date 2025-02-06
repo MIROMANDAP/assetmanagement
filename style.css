@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #121212 !important;
+}
+
+.container {
+    padding: 2% !important;
+    background-color: whitesmoke !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1%;
+}
+
+.navbar {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+}
+
+.main {
+    padding: 2% !important;
+}
+
+/* damn scrollbar */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+/* Position Fixed Styles for Scroll Buttons */
+.position-fixed {
+    position: fixed;
+    bottom: 20px; /* Position from the bottom */
+    right: 30px;  /* Position from the right */
+    z-index: 99;  /* Ensure it is above other elements */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Scroll Button Styles */
+.scroll-btn {
+    display: flex; /* Ensure the button itself is a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #2cab62; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Arrow Styles */
+.arrow-up, .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin: 0; /* Ensure no margin */
+}
+
+/* Center the arrows */
+.arrow-up {
+    border-bottom: 12px solid white; /* Arrow color */
+    margin-top: 2px; /* Adjust to center vertically */
+}
+
+.arrow-down {
+    border-top: 12px solid white; /* Arrow color */
+    margin-bottom: 2px; /* Adjust to center vertically */
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+    background-color: #0056b3; /* Change background on hover */
+}
+
+
+.action-button-container {
+    position: fixed; /* Fixed position to stay in view */
+    right: 20px; /* Distance from the left edge of the screen */
+    top: 1%; /* Adjust this value to position it higher on the screen */
+    z-index: 1000; /* Ensure it appears above other elements */
+	
+}
+
+.action-buttons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.action-button {
+    display: flex; /* Make the button a flex container */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border-radius: 50%; /* Make the button circular */
+    background-color: rgba(0, 123, 255, 0.6); /* Semi-transparent blue background */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.action-button:hover {
+    background-color: rgba(0, 123, 255, 0.8); /* Darker background on hover */
+}
+
+.action-button i {
+    font-size: 1em; /* Adjust icon size */
+}
+
+.dropdown .action-button {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 50%; /* Make the button circular */
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    display: flex; /* Center text inside */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    font-size: 1.2em; /* Increase font size */
+    padding: 0; /* Remove default padding */
+    background-color: rgba(0, 123, 255, 0.6); /* Semi-transparent blue background (60% opacity) */
+    color: white; /* Text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 0; /* Ensure no margin */
+}
+.dropdown-menu {
+    border-radius: 8px; /* Rounded corners for dropdown */
+}
+
+.dropdown-item {
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.dropdown-item:hover {
+    background-color: #54B4D3; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+
+.futuristic-modal {
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for shadow */
+    animation: fadeIn 0.5s ease; /* Animation for modal appearance */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.futuristic-modal:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.modal-header {
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Light text shadow */
+}
+
+.modal-body p {
+    margin: 0.5em 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-body h6 {
+    color: #007bff;
+    margin-top: 1em;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.modal-footer {
+    border-top: 1px solid #ccc;
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, #007bff, #00bfff); /* Gradient button */
+    border: none;
+    color: #fff;
+    transition: background 0.3s ease; /* Transition for button */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(90deg, #0056b3, #00aaff); /* Darker gradient on hover */
+}
+.summary-header {
+    text-align: center; /* Center the text */
+    background-color: #54B4D3 !important; /* Set background color to #54B4D3 */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px; /* Add some padding for better appearance */
+    font-size: 1.2em; /* Increase font size for emphasis */
+	    color: white; /* Change text color to white for better contrast */
+}
+/* General Table Styles */
+#assetsTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Header Styles */
+#assetsTable th {
+    background-color: #14A44D; /* Updated header background color */
+    color: white; /* White text for better visibility */
+    padding: 10px; /* Padding for better spacing */
+    text-align: left; /* Left align text */
+}
+
+/* Table Cell Styles */
+#assetsTable th, #assetsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+/* Total Row Styles */
+.total-row {
+    background-color: #54B4D3; /* Background color for total row */
+    color: white; /* Text color for total row */
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #000;
+    padding: 10px;
+}
+
+.total-row:hover {
+    background-color: #66C7F5; /* Lighter blue on hover */
+}
+
+/* Counts Row Styles */
+.counts-row {
+    background-color: #14A44D; /* Background color for counts row */
+    color: white; /* Text color for counts row */
+    font-weight: bold;
+    text-align: center;
+}
+
+.counts-row:hover {
+    background-color: #2E865F; /* Darker green on hover */
+}
+
+/* Hover Effect for Table Rows */
+#assetsTable tr {
+	 cursor: pointer; /* Change cursor to hand on hover */
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+#assetsTable tr:hover {
+    background-color: #54B4D3; /* Green background on hover */
+    color: white; /* White text color on hover */
+    transform: scale(1.00); /* Slightly enlarge the row */
+}
+
+.table-responsive {
+    max-width: 100%; /* Set the maximum width of the table */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+#assetsTable {
+    width: 100%; /* Ensure the table takes full width */
+    table-layout: fixed; /* Use fixed layout to respect the width of columns */
+}
+
+#assetsTable th, #assetsTable td {
+    word-wrap: break-word; /* Allow words to break and wrap */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
